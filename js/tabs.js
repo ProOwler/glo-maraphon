@@ -63,9 +63,9 @@ tabButtons.forEach((tabButton, index) => {
         });
         */
     // 4.1 - переключение с проверкой на дата-атрибут, с функцией
-    function changeContent(array, tabToggler, styleName) {
+    function changeContent(array, contentToggler, styleName) {
       array.forEach((elem) => {
-        if (elem.dataset.tabsField === tabToggler.dataset.tabsHandler) {
+        if (elem.dataset.tabsField === contentToggler.dataset.tabsHandler) {
           elem.classList.remove(styleName);
         } else {
           elem.classList.add(styleName);
